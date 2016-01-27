@@ -69,7 +69,7 @@ httplib HEAD queries work.
 
 You may also want to change:
 
- * STATE -- path to Perimetr's internal state file used with remote trigger
+ * `STATE` -- path to Perimetr's internal state file used with remote trigger
 
 `OVERLAY` is an empty python file that is written over the script file after 
 triggering, so the cron won't send out missing file emails and bring attention

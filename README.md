@@ -1,6 +1,6 @@
-UZB-78 Perimetr  --- dead man switch protocol implementation.
+# UZB-78 Perimetr  --- dead man switch protocol implementation.
 
-### Basics
+## Basics
 
 In the current form, the program checks a trigger (file or URL) and if
 the trigger hasn't been touched for a specified time, sends out a
@@ -9,14 +9,14 @@ for a specified amount of time. If the trigger is activated, the script
 replaces itself with a empty no-op one or tries to remove itself if the
 replacement is impossible.
 
-### Features
+## Features
 
  * local or remote trigger 
  * separate time threshold for remote trigger being unavaliable
  * auto-erases itself after the triggering
  * utf-8 support for messages
 
-### Triggers
+## Triggers
 
 For a local trigger, `touch(1)` something in your `.bashrc`.
 
@@ -26,7 +26,7 @@ link it somewhere under /var/www so it can be accessed over HTTP.
 I'm in the process of creating a web service for remote triggers to be
 updated from desktop machines. It will be avaliable Real Soon Now.
 
-### Deployment 
+## Deployment 
 
 It should be deployed on a Linux/Unix system, probably using
 `cron(8)`. Before you do that, customize the following settings:
@@ -66,7 +66,7 @@ httplib HEAD queries work.
 
 You may also want to change:
 
- * STATE -- path to Perimetr's internal state file used with remote trigger
+ * `STATE` -- path to Perimetr's internal state file used with remote trigger
 
 `OVERLAY` is an empty python file that is written over the script file after 
 triggering, so the cron won't send out missing file emails and bring attention
