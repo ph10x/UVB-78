@@ -1,5 +1,5 @@
 # UZB-78 Perimetr 
-##dead man switch protocol implementation.
+##dead man switch protocol implementation
 
 ### Basics
 
